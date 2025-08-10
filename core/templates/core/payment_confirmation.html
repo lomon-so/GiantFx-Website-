@@ -1,0 +1,50 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}About | Giant Fx Academy{% endblock %}
+
+{% block content %}
+
+<div class="container py-5">
+    <h2 class="text-center">Payment Confirmation</h2>
+    <div class="card mt-4">
+        <div class="card-body">
+            {% comment %} <p><strong>Customer Info:</strong></p> {% endcomment %}
+            {% comment %} <hr> {% endcomment %}
+            <p><strong>Name:</strong> {{ payment.name }}</p>
+            <p><strong>Email:</strong> {{ payment.email }}</p>
+            <p><strong>Phone:</strong> {{ payment.phone }}</p>
+            <p><strong>Product:</strong> {{ payment.get_product_type_display }}</p>
+            <p><strong>Amount:</strong> ${{ payment.amount }}</p>
+            <p><strong>Status:</strong> {{ payment.status }}</p>
+            <hr>
+            {% if payment.payment_method == 'bank' %}
+                <h5>Bank Transfer Details</h5>
+                <p><strong>Bank Name:</strong> Access Bank</p>
+                <p><strong>Account Number:</strong> 1234567890</p>
+                <p><strong>Account Name:</strong> Giant Fx Academy</p>
+                <hr>
+                <h6>Send receipt of your payment to this number: <strong> +2349168301929 </strong>  for confirmation.</h6>
+            {% elif payment.payment_method == 'crypto' %}
+                <h5>Crypto Payment</h5>
+                <p>Send payment to this wallet address:</p>
+                <p><code>bc1xyz1234abc...yourwallet</code></p>
+                <hr>
+                <h6>Send receipt of your payment to this number: <strong> +2349168301929 </strong>  for confirmation.</h6>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <a class="btn btn-primary rounded-pill py-3 px-5" href="{% url 'payment' %}">Change payment method</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
