@@ -1,0 +1,41 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}About | Giant Fx Academy{% endblock %}
+
+{% block content %}
+
+ 
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/about.jpg' %}" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">About Mrs Sandra</h6>
+                    <h1 class="mb-4">FOUNDER OF GIANT-FX ACADEMY</h1>
+                    <p class="mb-4">At Giant Fx, we believe trading is more than just charts and numbers it’s a
+                        powerful tool for building freedom, discipline, and wealth. Founded by <b>Sandra</b>, a seasoned
+                        Forex coach with years of live market experience, Giant Fx is on a mission to educate, mentor,
+                        and
+                        support traders at every stage of their journey..</p>
+                    <p class="mb-4">Whether you're a complete beginner or an experienced trader looking to scale, our
+                        platform offers the tools, guidance, and insights you need to win consistently. From powerful
+                        Forex signals to in-depth mentorship programs, we don’t just teach — we walk with you through
+                        every move.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+{% endblock %}
+

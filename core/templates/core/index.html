@@ -1,0 +1,601 @@
+{% extends 'core/base.html' %} 
+{% load static %} 
+{% block title %} Home | GiantFx {% endblock %} 
+
+{% block content %}
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5">
+  <div class="owl-carousel header-carousel position-relative">
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="{% static 'img/carousel-1.jpg' %}" alt="" />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: rgba(24, 29, 56, 0.7)"
+      >
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-sm-10 col-lg-8">
+              <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                Best Online Mentorship
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown">
+                The Best Online Learning Platform
+              </h1>
+              <p class="fs-5 text-white mb-4 pb-2">
+                Welcome to one of the most impactful online learning platforms
+                designed for aspiring and seasoned traders alike. We provide
+                top-tier mentorship programs that are structured to deliver real
+                results guiding you from beginner to confident trader.
+              </p>
+              <a
+                href="{% url 'packages' %}"
+                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >Mentorship
+              </a>
+              <a
+                href="https://t.me/giantfxcommunity"
+                target="_blank"
+                class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                >Join community</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="{% static 'img/carousel-2.jpg' %}" alt="" />
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: rgba(24, 29, 56, 0.7)"
+      >
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-sm-10 col-lg-8">
+              <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                Best Online Mentorship
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown">
+                Get Educated Online From Your Home
+              </h1>
+              <p class="fs-5 text-white mb-4 pb-2">
+                Learning Forex has never been more convenient. With our
+                best-in-class online mentorship, you can access powerful trading
+                knowledge, expert-led guidance, and real-world strategies all
+                from the comfort of your home.
+              </p>
+              <a
+                href="{% url 'packages' %}"
+                class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
+                >Mentorship
+              </a>
+              <a
+                href="https://t.me/giantfxcommunity"
+                target="_blank"
+                class="btn btn-light py-md-3 px-md-5 animated slideInRight"
+                >Join community</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+            <h5 class="mb-3">Skilled Instructors</h5>
+            <p>
+             Learn from experienced Forex traders who combine real market expertise with a passion for teaching. Gain clarity, confidence, and practical strategies for success..
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+            <h5 class="mb-3">Online Classes</h5>
+            <p>
+              Access high quality Forex mentorship from anywhere in the world. Our flexible online sessions are designed to fit your schedule and empower you with practical trading knowledge.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-play text-primary mb-4"></i>
+            <h5 class="mb-3">Videos</h5>
+            <p>
+              Learn anytime with engaging video lessons that simplify Forex trading. From basics to advanced strategies, our videos make learning clear, flexible, and effective..
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="service-item text-center pt-3">
+          <div class="p-4">
+            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+            <h5 class="mb-3">E-Books</h5>
+            <p>
+              Access powerful e-books packed with proven strategies, clear charts, and practical insights to help you trade smarter at your own pace.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Service End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div
+        class="col-lg-6 wow fadeInUp"
+        data-wow-delay="0.1s"
+        style="min-height: 400px"
+      >
+        <div class="position-relative h-100">
+          <img
+            class="img-fluid position-absolute w-100 h-100"
+            src="{% static 'img/about.jpg' %}"
+            alt=""
+            style="object-fit: cover"
+          />
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <h6 class="section-title bg-white text-start text-primary pe-3">
+          About Us
+        </h6>
+        <h1 class="mb-4">Welcome to GIANT-FX ACADEMY</h1>
+        <p class="mb-4">
+          At Giant Fx, we believe trading is more than just charts and numbers
+          it’s a powerful tool for building freedom, discipline, and wealth.
+          Founded by <b>Sandra</b>, a seasoned Forex coach with years of live
+          market experience, Giant Fx is on a mission to educate, mentor, and
+          support traders at every stage of their journey..
+        </p>
+        <p class="mb-4">
+          Whether you're a complete beginner or an experienced trader looking to
+          scale, our platform offers the tools, guidance, and insights you need
+          to win consistently. From powerful Forex signals to in-depth
+          mentorship programs, we don’t just teach — we walk with you through
+          every move.
+        </p>
+        <div class="row gy-2 gx-4 mb-4">
+          <div class="col-sm-6">
+            <p class="mb-0">
+              <i class="fa fa-arrow-right text-primary me-2"></i>Skilled
+              Instructors
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0">
+              <i class="fa fa-arrow-right text-primary me-2"></i>Online Classes
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0">
+              <i class="fa fa-arrow-right text-primary me-2"></i>Certificate
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <p class="mb-0">
+              <i class="fa fa-arrow-right text-primary me-2"></i>Weekly Live
+              Charts
+            </p>
+          </div>
+        </div>
+        <a class="btn btn-primary py-3 px-5 mt-2" href="{% url 'packages' %}"
+          >Get Started</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">signals</h6>
+                <h1 class="mb-5">Trading Signals</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a href="{% url 'payment' %}?product=signal_monthly" class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid" src=" {% static "img/cat-1.jpg" %}" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">Monthly Plan</h5>
+                                    <small class="text-dark">$50</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="{% url 'payment' %}?product=signal_yearly" class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid" src="{% static "/img/cat-2.jpg" %}" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">Yearly Plan</h5>
+                                    <small class="text-dark">$250</small>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a href="{% url 'payment' %}?product=signal_lifetime" class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid" src="{% static "img/cat-3.jpg" %}" alt="">
+                                <div class="bg-white text-center text-dark position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">Lifetime</h5>
+                                    <small class="text-primary">$500</small>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="{% url 'sandra' %}">
+                        <img class="img-fluid position-absolute w-100 h-100" src="{% static "img/cat-4.jpg" %}"
+                        alt="" style="object-fit: cover;">
+                        <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                            style="margin:  1px;">
+                            <h5 class="m-0">INSTRUCTOR</h5>
+                            <small class="text-dark">Mrs Sandra</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories End -->
+
+<!-- Courses Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Mentorship
+      </h6>
+      <h1 class="mb-5">Courses</h1>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static "img/course-1.jpg" %}" alt="">
+            <div
+              class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4"
+            >
+              <a
+                href="{% url 'payment' %}?product=mentorship_physical"
+                class="btn btn-sm btn-primary px-4 fw-bold"
+                style="border-radius: 30px; font-weight: 900"
+              >
+                Purchase Course
+              </a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h3 class="mb-0">$100.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <!-- <small class="fa fa-star text-primary"></small> -->
+              <!-- <small class="fa fa-star text-primary"></small> -->
+              <small>(95)</small>
+            </div>
+            <h5 class="mb-4">Physical - Mentorship</h5>
+            <p>Features:</p>
+            <p>Personalized 1-on-1 mentorship sessions</p>
+            <p>
+              Institutional-level trading insights and high-probability setups
+            </p>
+            <p>Psychological mastery and mindset coaching</p>
+            <p>Exclusive high-impact trading strategies</p>
+            <p>Private mastermind group with elite traders</p>
+            <p>
+              Lifetime VIP access to live trading sessions and real-time market
+              analysis
+            </p>
+          </div>
+          <div class="d-flex border-top">
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-user-tie text-primary me-2"></i>Mrs Sandra</small
+            >
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-clock text-primary me-2"></i>4 Hrs</small
+            >
+            <small class="flex-fill text-center py-2"
+              ><i class="fa fa-user text-primary me-2"></i>100 Students</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static "img/course-2.jpg" %}" alt="">
+            <div
+              class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4"
+            >
+              <a
+                href="{% url 'payment' %}?product=mentorship_online"
+                class="btn btn-sm btn-primary px-4 fw-bold"
+                style="border-radius: 30px; font-weight: 900"
+              >
+                Purchase Course
+              </a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h3 class="mb-0">$50.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small>(200)</small>
+            </div>
+            <h5 class="mb-4">Online - Mentorship</h5>
+            <p>Features:</p>
+            <p>Personalized 1-on-1 mentorship sessions</p>
+            <p>
+              Institutional-level trading insights and high-probability setups
+            </p>
+          </div>
+          <div class="d-flex border-top">
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-user-tie text-primary me-2"></i>Mrs Sandra</small
+            >
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-clock text-primary me-2"></i>2 - 3 Hrs</small
+            >
+            <small class="flex-fill text-center py-2"
+              ><i class="fa fa-user text-primary me-2"></i>1000 Students</small
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static "img/course-3.jpg" %}" alt="">
+            <div
+              class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4"
+            >
+              <a
+                href="{% url 'payment' %}?product=mentorship_private"
+                class="btn btn-sm btn-primary px-4 fw-bold"
+                style="border-radius: 30px; font-weight: 900"
+              >
+                Purchase Course
+              </a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h3 class="mb-0">$200.00</h3>
+            <div class="mb-3">
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <small class="fa fa-star text-primary"></small>
+              <!-- <small class="fa fa-star text-primary"></small> -->
+              <small>(123)</small>
+            </div>
+            <h5 class="mb-4">Private - Mentorship</h5>
+            <p>Features:</p>
+            <p>Personalized 1-on-1 mentorship sessions</p>
+            <p>
+              Institutional-level trading insights and high-probability setups
+            </p>
+          </div>
+          <div class="d-flex border-top">
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-user-tie text-primary me-2"></i>Mrs Sandra</small
+            >
+            <small class="flex-fill text-center border-end py-2"
+              ><i class="fa fa-clock text-primary me-2"></i>5 Hrs</small
+            >
+            <small class="flex-fill text-center py-2"
+              ><i class="fa fa-user text-primary me-2"></i>200 Students</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Courses End -->
+
+<!-- Team Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Instructors
+      </h6>
+      <h1 class="mb-5">Expert Instructors</h1>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static "img/team-1.jpg" %}" alt="">
+          </div>
+          <div
+            class="position-relative d-flex justify-content-center"
+            style="margin-top: -23px"
+          >
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Instructor Name</h5>
+            <small>Designation</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static "img/team-2.jpg" %}" alt="">
+          </div>
+          <div
+            class="position-relative d-flex justify-content-center"
+            style="margin-top: -23px"
+          >
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Instructor Name</h5>
+            <small>Designation</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static "img/team-3.jpg" %}" alt="">
+          </div>
+          <div
+            class="position-relative d-flex justify-content-center"
+            style="margin-top: -23px"
+          >
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Instructor Name</h5>
+            <small>Designation</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static "img/team-4.jpg" %}" alt="">
+          </div>
+          <div
+            class="position-relative d-flex justify-content-center"
+            style="margin-top: -23px"
+          >
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-sm-square btn-primary mx-1" href=""
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Instructor Name</h5>
+            <small>Designation</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="mb-5">Our Students Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static "img/testimonial-1.jpg" %}"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sarah Adeyemi</h5>
+                    <p>Beginner Trader</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0"> I joined with zero experience, and now I understand charts, strategy, and psychology. Their mentorship and materials are top-notch.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static "img/testimonial-2.jpg" %}"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Michael Uche</h5>
+                    <p>Full-Time Forex Trader</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0"> After taking the mentorship program, my trading results changed drastically. I finally understand risk management and consistency. Highly recommended!</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static "img/testimonial-3.jpg" %}"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">John Adewale</h5>
+                    <p>Forex Trader & Mentee</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Joining the mentorship program gave me the structure and discipline I lacked. I now approach trades with confidence and clarity. Best decision I ever made.</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static "img/testimonial-4.jpg" %}"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sandra Ikenna</h5>
+                    <p>Entrepreneur & Signal Subscriber</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">The signal service has been a game-changer for me. I no longer trade blindly. The accuracy and guidance I receive daily are unmatched. Totally worth it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+{% endblock %}
